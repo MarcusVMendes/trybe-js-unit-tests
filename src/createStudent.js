@@ -15,6 +15,10 @@
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
-const createStudent = () => {};
-
+const createStudent = (nome) => ({
+  name: nome,
+  feedback: () => 'Eita pessoa boa!',
+});
+console.log(createStudent('Marcus'));
 module.exports = createStudent;
+// Dica do Panta de utilizar os parenteses, haja vista que a arrow function sem ele não diferencia se a chave é um escopo ou um objeto.
